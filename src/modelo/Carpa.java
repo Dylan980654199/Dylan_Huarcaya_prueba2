@@ -20,4 +20,10 @@ public class Carpa extends MedioDeAlojamiento {
     public void setCantidadPersonas(int cantidadPersonas) {
         this.cantidadPersonas = cantidadPersonas;
     }
+
+    @Override
+    public int valorACancelar() {
+        int valorTotal = this.subtotal()-this.bonoDescuento();
+        return valorTotal;
+    }
 }

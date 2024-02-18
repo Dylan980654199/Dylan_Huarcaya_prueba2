@@ -1,6 +1,6 @@
 package modelo;
 
-public class MedioDeAlojamiento {
+public abstract class MedioDeAlojamiento {
 
     protected int valorBaseNoche;
     protected int cantidadNoches;
@@ -84,11 +84,7 @@ public class MedioDeAlojamiento {
     y sumar el adicional, donde corresponda.
      */
 
-    public int valorACancelar(){
-        int valorTotal = this.subtotal()-this.bonoDescuento();
-        return valorTotal;
-    }
-
+    public abstract int valorACancelar();
 
 
 

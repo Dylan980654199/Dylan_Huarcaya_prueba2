@@ -5,19 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c9a9c740-5f1e-46ce-a70f-28a47481eff7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Evaluacion2_Java.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modelo/Cabagna.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modelo/Carpa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modelo/DatosCliente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modelo/Hospederia.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modelo/Hotel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modelo/MedioDeAlojamiento.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/vista/App_Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controlador/TurismoAlojamiento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modelo/Cabagna.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modelo/Cabagna.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modelo/Carpa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modelo/Carpa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modelo/DatosCliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modelo/DatosCliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modelo/Hospederia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modelo/Hospederia.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modelo/Hotel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modelo/Hotel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modelo/MedioDeAlojamiento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modelo/MedioDeAlojamiento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vista/App_Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/vista/App_Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,10 +43,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.App_Test.executor": "Debug",
+    "Application.App_Test.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "onboarding.tips.debug.path": "C:/Users/WIN 20/OneDrive - UNIVERSIDAD DE INGENIERIA Y TECNOLOGIA/Documentos/POO_JAVA/Evaluacion2_Java/src/Main.java"
   }

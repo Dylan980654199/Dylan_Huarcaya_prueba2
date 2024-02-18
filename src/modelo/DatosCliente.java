@@ -3,11 +3,11 @@ package modelo;
 public class DatosCliente {
 
     private String nombre;
-    private int rut;
+    private String rut;
 
     //Constructor
 
-    public DatosCliente(String nombre, int rut) {
+    public DatosCliente(String nombre, String rut) {
         this.nombre = nombre;
         this.rut = rut;
     }
@@ -23,11 +23,11 @@ public class DatosCliente {
         this.nombre = nombre;
     }
 
-    public int getRut() {
+    public String getRut() {
         return rut;
     }
 
-    public void setRut(int rut) {
+    public void setRut(String rut) {
         this.rut = rut;
     }
 }

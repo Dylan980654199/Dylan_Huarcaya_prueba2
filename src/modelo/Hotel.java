@@ -37,15 +37,16 @@ public class Hotel extends Hospederia {
          return adicional;
     }
 
-    public int valorACancelar(){
-        int valorTotal = this.subtotal() - bonoDescuento(); // Restar el bono de descuento del subtotal
+    @Override
+    public int valorACancelar() {
+        int valorTotal = this.subtotal() - this.bonoDescuento();
 
-        // Verificar si el adicional aplica y sumarlo
         if (this.getEsFumador() && this.getConDesayuno()) {
             valorTotal += adicional();
         }
 
         return valorTotal;
     }
+
 
 }

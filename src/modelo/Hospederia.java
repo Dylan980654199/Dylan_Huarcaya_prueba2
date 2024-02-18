@@ -1,6 +1,6 @@
 package modelo;
 
-public class Hospederia extends MedioDeAlojamiento {
+public abstract class Hospederia extends MedioDeAlojamiento {
     protected int capacidad;
     protected boolean esFumador;
 

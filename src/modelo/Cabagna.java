@@ -29,9 +29,14 @@ public class Cabagna extends Hospederia {
     public void incrementaValorBase(){
         int nuevoValorBase = 0;
         if(this.getCapacidad()>5){
-            nuevoValorBase = getValorBaseNoche()*18/100 + getValorBaseNoche();
+            nuevoValorBase = this.getValorBaseNoche()*18/100 + this.getValorBaseNoche();
             setValorBaseNoche(nuevoValorBase);
         }
     }
 
+    @Override
+    public int valorACancelar() {
+        int valorTotal = this.subtotal()-this.bonoDescuento();
+        return valorTotal;
+    }
 }
