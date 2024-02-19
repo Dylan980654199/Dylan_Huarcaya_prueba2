@@ -52,6 +52,7 @@ public class TurismoAlojamiento {
 
     public void ingresarAlojamientoCabagna(Cabagna cabagna){
         if (buscarAlojamiento(cabagna.getCliente().getRut())==-1){
+            cabagna.incrementaValorBase();
             alojamiento.add(cabagna);
         }
     }
@@ -134,7 +135,7 @@ public class TurismoAlojamiento {
 
             }
         }
-        return "El Rut " + rut + "no esta asociado a ningun cliente. Vuelva a intentar.";
+        return "El Rut " + rut + " no esta asociado a ningun cliente. Vuelva a intentar.";
     }
 
     public String totalAdicional(){
@@ -145,7 +146,7 @@ public class TurismoAlojamiento {
             }
         }
 
-        return "El total del valor adicional es: " + suma;
+        return "El total del valor adicional es: $" + suma;
     }
 
     public String totalBonoDescuento(){
@@ -155,7 +156,7 @@ public class TurismoAlojamiento {
 
         }
 
-        return "El total del bono de descuento es: " + suma;
+        return "El total del bono de descuento es: $" + suma;
     }
 
     public String cantidadMediosAlojamientos(){
@@ -180,7 +181,7 @@ public class TurismoAlojamiento {
         String nombre = null;
         for (int i=0; i<alojamiento.size();i++){
             if(alojamiento.get(i).getCliente().getRut().compareToIgnoreCase(rut)==0){
-                total = alojamiento.get(i).subtotal();
+                total = alojamiento.get(i).valorACancelar();
                 nombre = alojamiento.get(i).getCliente().getNombre();
                 return "El cliente "+ nombre + " debe cancelar $" + total;
             }
@@ -188,10 +189,27 @@ public class TurismoAlojamiento {
         return "El cliente no existe";
     }
 
-    public String incrementoValorBase(){
-
-        return "0";
-
+    public String incrementoValorBase(String rut){
+        int incremento = 0;
+        String nombre = null;
+        Cabagna cabagna = null;
+        for (int i=0; i<alojamiento.size();i++){
+            if(alojamiento.get(i).getCliente().getRut().compareToIgnoreCase(rut)==0){
+                nombre = alojamiento.get(i).getCliente().getNombre();
+                if(alojamiento.get(i) instanceof Cabagna){
+                    if(((Cabagna) alojamiento.get(i)).getCapacidad()>5){
+                        cabagna = (Cabagna) alojamiento.get(i);
+                        incremento = (int) (cabagna.getValorBaseNoche() - (cabagna.getValorBaseNoche() / (1 + 0.18)));
+                        return "Al cliente " + nombre + " se le aplica un incremento de $" + incremento + " sobre el valor base por superar la capacidad de la cabaña.";
+                    }else{
+                        return "Al cliente " + nombre + " no se le aplica ningún incremento por no superar la capacidad de la cabaña";
+                    }
+                }else{
+                    return "Al cliente " + nombre + " no se le aplica ningún incremento por no estar hospedado en la cabaña.";
+                }
+            }
+        }
+        return "El cliente no existe";
     }
 
 

@@ -13,7 +13,7 @@ public class App_Test {
         DatosCliente cliente = new DatosCliente("Dylan Huarcaya","1.234.567-8");
         DatosCliente cliente2 = new DatosCliente("Katia Garcia","1.578.567-9");
         DatosCliente cliente3 = new DatosCliente("Diego Maizo","2.254.555-2");
-        DatosCliente cliente4 = new DatosCliente("Diego Maizo","2.254.585-2");
+        DatosCliente cliente4 = new DatosCliente("Cesar German","2.254.585-2");
         DatosCliente cliente5 = new DatosCliente("Cristian Galarza","2.999.585-2");
 
         Carpa carpa1 = new Carpa(500,3,"baja",cliente,4);
@@ -63,9 +63,6 @@ public class App_Test {
         System.out.println("El bono de descuento de la cabaña es: $" + cabagna1.bonoDescuento());
         System.out.println("El valor total a pagar de la cabaña es: $" + cabagna1.valorACancelar());
         */
-
-
-
 
 
 
